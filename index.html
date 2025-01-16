@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Love of Writers</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#hero" class="active" onclick="setActive(event)">Home</a>
+      <a href="#features" onclick="setActive(event)">Features</a>
+      <a href="#contact" onclick="setActive(event)">Contact</a>
+      <a
+        href="javascript:void(0);"
+        class="icon"
+        onclick="myFunction()"
+        onblur="blurFunction()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to For Love of Writers</h1>
+        <p>Your one-stop solution for all writing needs</p>
+        <button>Get Started</button>
+      </div>
+    </section>
+    <section id="features" class="features">
+      <div class="img-div">
+        <img src="placeholder.png" alt="Placeholder Image" />
+      </div>
+      <div class="features-content">
+        <span>
+          <h2>Our Features</h2>
+          <p>
+            Discover the amazing features we offer to help you with your writing
+            journey. From grammar checks to style suggestions, we have it all.
+          </p></span
+        >
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <p id="errorMessage" style="color: red; display: none">
+        Please fill out all fields correctly.
+      </p>
+    </section>
+
+    <script></script>
+  </body>
+  <script defer src="index.js"></script>
+</html>
